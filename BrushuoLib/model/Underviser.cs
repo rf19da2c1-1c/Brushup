@@ -7,34 +7,14 @@ using System.Threading.Tasks;
 
 namespace BrushuoLib.model
 {
-    public class Underviser
+    public class Underviser:Person
     {
         // instans felter
-        private String _name;
-        private int _age;
-        private bool _sex;
+        
         private List<String> _teachingCourses;
 
-        // prooerties
-        public String Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
-
-        public int Age
-        {
-            get { return _age; }
-            set { _age = value; }
-
-
-        }
-
-        public bool Sex
-        {
-            get { return _sex; }
-            set { _sex = value;}
-        }
+        // properties
+        
 
         public List<String> TeachingCourses
         {
@@ -43,19 +23,12 @@ namespace BrushuoLib.model
         }
 
         // constructor
-        public Underviser()
+        public Underviser():this ("dummy",0,true)
         {
-            _name = "dummy";
-            _age = 0;
-            _sex = true;
-            _teachingCourses = new List<string>();
         }
 
-        public Underviser(string name, int age, bool sex)
+        public Underviser(string name, int age, bool sex):base(name,age,sex)
         {
-            _name = name;
-            _age = age;
-            _sex = sex;
             _teachingCourses = new List<string>();
         }
 
@@ -64,15 +37,17 @@ namespace BrushuoLib.model
 
         public override string ToString()
         {
+            //version 1
             String fagStr = String.Join(", ", _teachingCourses);
 
+            // version 2
             String fagStr2 = "";
             foreach (string fag in _teachingCourses)
             {
                 fagStr2 = fagStr2 + ", " + fag;
             }
 
-            return $"Navn:{_name}, Alder:{_age}, Mand:{_sex}, Underviser i: [{fagStr2}]";
+            return base.ToString() + $", Underviser i: [{fagStr2}]";
         }
     }
 }
