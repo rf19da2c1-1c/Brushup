@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrushupConsoleApp", "Brushu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrushuoLib", "BrushuoLib\BrushuoLib.csproj", "{3A836BBA-123D-43A5-9095-78A60D51682C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject2", "UnitTestProject2\UnitTestProject2.csproj", "{4084818B-339A-4D1B-A298-1DE9B3ED6D4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3A836BBA-123D-43A5-9095-78A60D51682C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A836BBA-123D-43A5-9095-78A60D51682C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A836BBA-123D-43A5-9095-78A60D51682C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4084818B-339A-4D1B-A298-1DE9B3ED6D4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4084818B-339A-4D1B-A298-1DE9B3ED6D4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4084818B-339A-4D1B-A298-1DE9B3ED6D4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4084818B-339A-4D1B-A298-1DE9B3ED6D4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
