@@ -47,7 +47,7 @@ namespace BrushuoLib.model
                 fagStr2 = fagStr2 + ", " + fag;
             }
 
-            return base.ToString() + $", Underviser i: [{fagStr2}]";
+            return base.ToString() + $", Underviser i: [{fagStr}]";
         }
     }
 }

@@ -38,7 +38,14 @@ namespace BrushupConsoleApp
                 Console.WriteLine(e.Message);
             }
 
-            
+            UnderviserStab stab = new UnderviserStab();
+            Console.WriteLine(stab);
+
+            Console.WriteLine("Underviser i faget SWC2");
+
+            List<Underviser> underviserifaget =  stab.GetTeacherByCourse("SWC2");
+
+            Console.WriteLine(string.Join("\n", underviserifaget));
 
         }
     }

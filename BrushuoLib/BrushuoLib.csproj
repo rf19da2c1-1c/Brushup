@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="model\Person.cs" />
     <Compile Include="model\Underviser.cs" />
+    <Compile Include="model\UnderviserStab.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

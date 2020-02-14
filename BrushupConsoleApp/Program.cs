@@ -10,6 +10,8 @@ namespace BrushupConsoleApp
     {
         static void Main(string[] args)
         {
+            
+
             BrushupWorker worker = new BrushupWorker();
             worker.Start();
 
